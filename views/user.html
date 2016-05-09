@@ -1,0 +1,30 @@
+<div class = "userdetails">
+    <table border=1 style="border-collapse: collapse">
+
+        <tr>
+            <th>NAME</th> <br>
+            <th>MAIL-ID</th> <br>
+            <th>PHONENUMBER</th> <br>
+            <th>STATUS</th> <br>
+        </tr>
+
+       <tr ng-repeat="inventry in inventry track by $index">
+            <td ng-if="$odd" style="background-color:gray">
+                {{inventry.name}} </td>
+            <td ng-if="$even">
+                {{inventry.name}} </td>
+            <td ng-if="$odd" style="background-color:gray">
+                {{inventry.mailId}} </td>
+            <td ng-if="$even">
+                {{inventry.mailId}} </td>
+            <td ng-if="$odd" style="background-color:gray">
+                {{inventry.phonenumber}} </td>
+            <td ng-if="$even">
+                {{inventry.phonenumber}} </td>
+            <td ng-if="$odd" style="background-color:gray">
+                {{inventry.status}} </td>
+            <td ng-if="$even">
+                {{inventry.status}} </td>
+        </tr>
+   </table>
+</div>
